@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>PDF Page Reverser</title>
+<meta property="og:title" content="PDF Page Reverser" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Reverse page order of your PDF files easily" />
+<meta property="og:description" content="Reverse page order of your PDF files easily />
+<meta property="og:url" content="https://reversepdf.fluffy.es" />
+<meta property="og:site_name" content="PDF Page Reverser" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://pdfpagenumber.com/512.png" />
+<meta property='og:image:type' content='image/png' />
+<meta property='og:image:width' content='512' />
+<meta property='og:image:height' content='512' />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header" style="text-align: center;">
+      <h1>PDF Page Reverser</h1>
+      <span>Reverse page orders of your PDF easily</span>
+      <img src="reverser.png" alt="Reverser app" class="reverser"/>
+    </div>
+    <div class="action">
+      <a href="#" target="_blank"><img srcset="masblack.png 1x, masblack@2x.png 2x" src="masblack.png"alt="Mac App Store download" /></a><br><br>
+      <a class="cta2" onclick="revealVideo('video','youtube')">Watch Demo</a>
+      <br><br>
+      <span>(for macOS 10.12 and above)</span>
+      <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+        <div class="lightbox-container">  
+          <div class="lightbox-content">
+      
+            <button onclick="hideVideo('video','youtube')" class="lightbox-close">
+            Close | ✕
+            </button>
+          <div class="video-container">
+            <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/sO5IRRttn5U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>      
+      
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="pitch">
+
+      <ul>
+        <li>Reverse page orders of PDF file easily</li>
+      </ul>
+      <br>
+      <p>Does this sound farmiliar? Your scanner doesn't support duplex scanning, hence you have to tediously rearange the order of the scanned PDF manually after each scan.</p>
+      <br>
+      <p>At first you tried manually drag and drop in Preview to reorder the pages, and then you gave up after 10 pages. It just feel impossible to manually rearrange dozens of pages in Preview.</p>
+      <br>
+      <p>You googled a bit and found some suggestion to use a PDF tool shareware that cost quite some amount of money, it certainly doesn't feel worth to purchase a full suite of PDF tool just to reverse page order! Hah, Don't even get us started on the pricing of Adobe Acrobat.</p>
+      <br>
+      <p>Like you, I got fed up, and thus decided to make this app in a whim.</p>
+      <br>
+      <p>I hope this app is useful for you for handling scanned PDF!</p>
+      <br>
+      
+      <br><br>
+      <h3>FAQ</h3><strong>Q: Will the original PDF file get modified?</strong>
+      <br><br>
+      <span>Answer: No, the original PDF file will not be modified, the app will produce a new PDF file with reversed page order. </span>
+      <br><br>
+      <strong>Q: Is this a native app?</strong>
+      <br><br>
+      <span>Answer: Yes, the app is written in 100% Swift. </span>
+      <br><br>
+      <h3>Privacy Policy</h3>
+      <span>PDF Page Reverser does not collect any data from you. No amount of data is collected in any manner.</span>
+      <br><br>
+      Have other questions? Contact me at <a href="mailto:axel@fluffy.es">axel@fluffy.es</a>
+    </div>
+    <div class="footer">
+      <span>Made by <a href="https://fluffy.es">Axel Kee</a></span>
+    </div>
+  </div>
+<script>
+function revealVideo(div,video_id) {
+  var video = document.getElementById(video_id).src;
+  document.getElementById(video_id).src = video+'&autoplay=1'; // adding autoplay to the URL
+  document.getElementById(div).style.display = 'block';
+}
+
+// Hiding the lightbox and removing YouTube autoplay
+function hideVideo(div,video_id) {
+  var video = document.getElementById(video_id).src;
+  var cleaned = video.replace('&autoplay=1',''); // removing autoplay form url
+  document.getElementById(video_id).src = cleaned;
+  document.getElementById(div).style.display = 'none';
+}
+</script>
+<!-- Default Statcounter code for Pdfreverser.fluffy.es
+https://pdfreverser.fluffy.es -->
+<script type="text/javascript">
+var sc_project=11858681; 
+var sc_invisible=1; 
+var sc_security="9c5a4a48"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11858681/0/9c5a4a48/1/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
