@@ -56,10 +56,31 @@ blockquote > :last-child { margin-bottom: 0; }
 
 .header{
   margin-top: 2em;
-  background-image: url('bgdemo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+.header h1{
+  color: #ffcc00;
+  /*text-shadow: 1px 1px #fff;*/
+}
+
+ul.wrong {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul.wrong li {
+  padding-left: 1.4em;
+  text-indent: -1.4em;
+  margin-bottom: 0.8em;
+}
+
+ul.wrong li:before {
+  content: "❌";
+  padding-right: 5px;
 }
 
 .action{
@@ -68,12 +89,6 @@ blockquote > :last-child { margin-bottom: 0; }
   text-align: center;
 }
 
-.reverser{
-  width: 100%;
-  height: auto;
-  max-width: 526px;
-  max-height: 384px;
-}
 
 .footer {
   text-align: center;
