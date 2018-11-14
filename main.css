@@ -14,6 +14,12 @@ font-feature-settings: "kern" 1;
 font-kerning: normal; 
 }
 
+@media screen and (max-width: 500px) {
+  body{
+    font-size: 15px;
+  }
+}
+
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
 
@@ -81,6 +87,30 @@ ul.wrong li {
 ul.wrong li:before {
   content: "❌";
   padding-right: 5px;
+}
+
+ul.correct {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul.correct li {
+  padding-left: 1.4em;
+  text-indent: -1.4em;
+  margin-bottom: 0.4em;
+}
+
+ul.correct li:before {
+  content: "✅";
+  padding-right: 5px;
+}
+
+.bookname {
+  background: -webkit-linear-gradient(#70AAD1, #365D87);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .action{
