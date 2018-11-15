@@ -3,20 +3,21 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { m
 
 /** Basic styling */
 body { 
-font: 300 20px 'Open Sans', Helvetica, Arial, sans-serif, "Apple Color Emoji"; 
-color: #f0e7d5; 
-background-color: #242424; 
--webkit-text-size-adjust: 100%; 
--webkit-font-feature-settings: "kern" 1; 
--moz-font-feature-settings: "kern" 1; 
--o-font-feature-settings: "kern" 1; 
-font-feature-settings: "kern" 1; 
-font-kerning: normal; 
+  font: 300 20px 'Open Sans', Helvetica, Arial, sans-serif, "Apple Color Emoji"; 
+  color: #f0e7d5; 
+  background-color: #242424; 
+  -webkit-text-size-adjust: 100%; 
+  -webkit-font-feature-settings: "kern" 1; 
+  -moz-font-feature-settings: "kern" 1; 
+  -o-font-feature-settings: "kern" 1; 
+  font-feature-settings: "kern" 1; 
+  font-kerning: normal; 
 }
 
 @media screen and (max-width: 500px) {
   body{
     font-size: 15px;
+    font-weight: 400;
   }
 }
 
@@ -65,11 +66,16 @@ blockquote > :last-child { margin-bottom: 0; }
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
+  margin-bottom: 2em;
 }
 
 .header h1{
-  color: #ffcc00;
-  /*text-shadow: 1px 1px #fff;*/
+  /*color: #ffcc00;*/
+  color: #eaeaea;
+  /*background: -webkit-linear-gradient(#70AAD1, #365D87);*/
+  /*-webkit-background-clip: text;*/
+  /*-webkit-text-fill-color: transparent;*/
+  /*text-shadow: -1px -1px #fff;*/
 }
 
 ul.wrong {
@@ -104,6 +110,13 @@ ul.correct li {
 ul.correct li:before {
   content: "✅";
   padding-right: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  ul.correct li, ul.wrong li {
+    padding-left: 1.5em;
+    text-indent: -1.7em;
+  }
 }
 
 .bookname {

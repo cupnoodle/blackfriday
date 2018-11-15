@@ -27,23 +27,25 @@
       <h1>"I've wasted so many hours adjusting constraints, yet the position of labels and images in my app still looks way off"</h1>
     </div>
     <div class="pitch">
-      <span>Does these sounds familiar? </span>
+      <span>Do these sounds familiar? </span>
       <br><br>
       <ul class="wrong">
         <li>Randomly adding and removing constraint and hoping it to work when pressing the ▶️ button</li>
-        <li>Kept running into <span style="color: #dc0005;">conflicting constraints</span> error over and over again</li>
+        <li>Kept running into <strong>conflicting constraints</strong> error over and over again</li>
         <li>Xcode told you to change <strong>Content Hugging</strong> and <strong>Content Compression Resistance</strong> priorities, but what are these?</li>
-        <li>Afraid to make change on constraints fearing you will get <span style="color: #dc0005;">red lines</span> everywhere</li>
+        <li>Afraid to make changes on constraints fearing you will get <strong>red lines</strong> everywhere</li>
+        <li>Finally got it working on your iPhone, but when you view it on iPhone SE, the text doesn't fit</li>
         <li>Finally got it working on your iPhone, but when you view it on iPhone X, the text got clipped by the notch
           <br><br>
-          <img src="topNotch.png" style="width:314px; height:auto; margin-left: auto; margin-right: auto;" alt="Top notch blocking text" /></li>
+          <p style="text-align: center;">
+          <img src="topNotch.png" style="width:314px; height:auto; margin-left: auto; margin-right: auto;" alt="Top notch blocking text" /></p></li>
       </ul>
       <br><br>
       <p>Adding constraints pretty much feel like <strong>guesswork</strong> at this point :</p>
       <ol>
         <li>Add constraint</li>
         <li>Run the app</li>
-        <li>Tweak the number value of constraint</li>
+        <li>Tweak the number value of the constraint</li>
         <li>Run the app</li>
         <li>Add more constraint</li>
         <li>Run the app</li>
@@ -52,21 +54,21 @@
       <br>
       <p>You are interested to create an iOS app, you picked up Swift and enjoyed learning it, you managed to create some simple app after following tutorials. But when it comes to designing user interface, Auto Layout doesn't make sense to you, it feels like you have to get lucky to get a layout working. </p>
       <br>
-      <p>Months of coding work is getting thrown away as you can’t even get the user interface to display correctly. At this point you are asking yourself whether it is a good choice to continue iOS programming, as spending time fighting with Auto Layout doesn't feel worth it anymore.</p>
+      <p>Months of coding work is getting thrown away as you can’t even get the user interface to display correctly. At this point, you are asking yourself whether it is a good choice to continue iOS programming, as spending the time to fight with Auto Layout doesn't feel worth it anymore.</p>
       <br><br>
       <!--<h2>No matter how many tutorials you follow, when you open Xcode interface builder, you still feel stuck</h2>
       <p>You have watched a bunch of Youtube video tutorials but when you open up Xcode and try it, you have no idea what you’re doing. Sometimes you managed to do the layout shown in the video, but when it comes to your own layout, you’re clueless.</p>
       <br>
       <p>When you ask for advice on internet forum, you get different conflicting advices. “Ditch the Interface Builder, do Auto Layout in code!”, “Use library like SnapKit!”, “Try UIStackViews!”. Which advice should you take? Should you spend extra time on learning third party library just to make the user interface work? (Answer: No, you don't need to learn extra third party library to make layout work)</p>-->
       <p>"Auto Layout shouldn't be that hard!", you exclaimed. Let's take a moment and imagine the following : </p><br>
-      <h2>What if you knew exactly what constraint to add for each element, and able to create user interface that look great on any screen size?</h2>
+      <h2>What if you are able to create user interfaces which look great on any screen size?</h2>
       <p>What if you <strong>knew exactly which constraint to add</strong> for each element? You could save hours from trial and error-ing constraints. You’d know how to troubleshoot constraints whenever your layout looks off from their supposed position. <strong>You’d be confident that your app will look exactly like how you want it</strong> in all iPhones and iPads. You could finish the app that you have been working on for months, <strong>submit it to the App Store</strong>, and have a better resume for applying iOS developer positions.</p>
       <br><br>
       <h2>Learn the fundamentals of Auto Layout and create constraint confidently</h2>
       <p>The problem with Auto Layout is that winging it as you go along is not an option. With coding you often can trial and error until it works, so we are used to it. Auto Layout needs to be properly understood and applied systematically, you have to understand what every single constraint is doing, throwing them in at random until its <span style="color: #4691D6"> all blue</span> is never going to work.</p>
 
       <br>
-      <p>Making Sense of Auto Layout will explain the fundamentals of Auto Layout including <strong>how it decides the position and size of an UI Element</strong> (UIView, UILabel etc), what problems do Auto Layout solve, why do Xcode shows you <span style="color: #dc0005;">red lines</span> and how to troubleshoot them.</p>
+      <p>Making Sense of Auto Layout focuses on the fundamentals of Auto Layout including <strong>how it decides the position and size of a UI Element</strong> (UIView, UILabel etc), what problems do Auto Layout solve, why do Xcode shows you <strong>red lines</strong> and how to troubleshoot them.</p>
       <br>
       <h2>Create layout with dynamic content at ease</h2>
       <p>Most of the time your app will communicate with a web API that returns JSON content, you can confidently create a layout that cater to dynamic content using <strong>Self-sizing table view cells</strong> or <strong>Scroll views with dynamic height</strong>. </p>
@@ -76,13 +78,13 @@
       <p>Start creating the layout you want, looks good across all iOS devices, and submit it to App Store confidently.</p>
       <br><br>
       <h2>What's in the book?</h2>
-      Instead of showing you a specific complex layout to follow step by step, this book will break down and explain the fundamentals of Auto Layout and let you connect the dots before you start designing your own layout. This book will focus on doing Auto Layout using Interface Builder (Xcode GUI), but its core concept can be applied to doing it programmatically (using code) as well.
+      Instead of showing you a specific complex layout to follow step by step, this book breaks down and explain the fundamentals of Auto Layout and let you connect the dots before you start designing your own layout. This book is focused on doing Auto Layout using Interface Builder (Xcode GUI), but its core concept can be applied to doing it programmatically (using code) as well.
       <br><br>
       <ul class="correct">
         <li>How User Interface is being designed prior to Auto Layout and <strong>why Auto Layout is introduced</strong></li>
         <li>How Auto Layout determine position and size of a UI Element by using constraints you defined</li>
-        <li>Why missing constraints (<span style="color: #BE3220;">Red lines!</span>) appear and how to solve them</li>
-        <li>Why conflicting constraints (<span style="color: #BE3220;">Red lines, with numbers!</span>) happen and how to solve them</li>
+        <li>Why missing constraints (Red lines!) appear and how to solve them</li>
+        <li>Why conflicting constraints (Red lines, with numbers!) happen and how to solve them</li>
         <li>What is intrinsic content size and the importance of it</li>
         <li>Using Tableview for content with dynamic size</li>
         <li>Using Scrollview for content with dynamic size</li>
