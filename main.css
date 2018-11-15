@@ -202,65 +202,73 @@ ul.correct li:before {
   }
 }
 
-/* video player */
-.lightbox {
-  background-color: rgba(0, 0, 0, 0.8);
-  overflow: scroll;
-  position: fixed;
-  display: none;
-  z-index: 1;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
+.post-subscribe {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    border: 1px solid #CCC;
+    text-align: left;
+    border-radius: 4px;
+    background-color: #1d1f21;
+    border: 1px solid #121212;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3)
 }
-.lightbox-container {
-  position: relative;
-  max-width: 960px;
-  margin: 7% auto;
-  display: block;
-  padding: 0 3%;
-  height: auto;
-  z-index: 10;
+
+.post-subscribe h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0
 }
-@media screen and (max-width: 768px) {
-  .lightbox-container {
-    margin-top: 10%;
-  }
+
+.post-subscribe img {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
-@media screen and (max-width: 414px) {
-  .lightbox-container {
-    margin-top: 13%;
-  }
+
+.post-subscribe span {
+    display: inline
 }
-.lightbox-content {
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+
+.post-subscribe-left, .post-subscribe-right {
+    display: inline-table;
+    width: 42%;
+    height: 100%;
+    padding: 1rem
 }
-.lightbox-close {
-  text-transform: uppercase;
-  background: transparent;
-  position: absolute;
-  font-weight: 300;
-  font-size: 12px;
-  display: block;
-  border: none;
-  color: white;
-  top: -22px;
-  right: 3%;
+
+@media (max-width: 450px) {
+    .post-subscribe-left, .post-subscribe-right {
+        width: 87%
+    }
 }
-.video-container {
-  padding-bottom: 56.25%;
-  position: relative;
-  padding-top: 30px;
-  overflow: hidden;
-  height: 0;
+
+.post-subscribe input[type=text], .post-subscribe input[type=email] {
+    font-size: 1rem;
+    padding: 0.4rem;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #999
 }
-.video-container iframe,
-.video-container object,
-.video-container embed {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
+
+.post-subscribe input[type="submit"] {
+    background: #4dbbf7;
+    background: -moz-linear-gradient(top, #4dbbf7 1%, #0882fe 100%);
+    background: -webkit-linear-gradient(top, #4dbbf7 1%, #0882fe 100%);
+    background: linear-gradient(to bottom, #4dbbf7 1%, #0882fe 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4dbbf7', endColorstr='#0882fe', GradientType=0 );
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    color: #f9f9f9;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 100%;
+    border: 0;
+    text-shadow: 0px 1px 1px #333
 }
