@@ -196,6 +196,33 @@ ul.correct li:before {
   border: 4px solid #4685BF;
 }
 
+.cross {
+    position: relative;
+    display: inline-block;
+}
+.cross::before, .cross::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+
+.cross::after {
+  top: 60%;
+}
+
+.cross::before {
+    border-bottom: 1.5px solid #f3f3f3;
+    /*-webkit-transform: skewY(-10deg);*/
+    /*transform: skewY(-10deg);*/
+}
+.cross::after {
+    border-bottom: 1.5px solid #f3f3f3;
+    /*-webkit-transform: skewY(10deg);*/
+    /*transform: skewY(10deg);*/
+}
+
 @media screen and (max-width: 500px) {
   .cta, .cta2{
     display: block;
